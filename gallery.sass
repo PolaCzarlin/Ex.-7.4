@@ -1,0 +1,63 @@
+/*GALLERY WITH HEADER*/
+.header-text
+	display: table
+	background-color: white
+	max-height: 100%
+	width: 100%
+	padding: 20px
+	text-align: center
+	margin: 0 auto 
+	h2
+		font-size: 35px
+		text-transform: uppercase
+		font-weight: bold
+		color: $body
+
+	p
+		line-height: 20px
+
+
+.gallery
+	line-height: 0px
+	background-color: white
+	max-height: 100%
+	width: 100%
+	display: block
+	margin: 0 auto
+
+	img
+		height: 220px
+		margin: 0
+		float: left
+		width: 100%
+		max-width: 960px
+
+	.col-2
+		height: 200px
+		overflow: hidden
+
+.layer
+	opacity: 0
+	height: 200px
+	width: 100%
+	line-height: 200px
+	color: white
+	background-color: rgba(0,0,0,0.5)
+	text-align: center
+	overflow: hidden
+	&:hover,
+	&:focus
+		opacity: 1
+		cursor: pointer
+		transition: 0.7s	
+
+i.fa-cogs
+	color: navy
+	margin: 30px 
+	padding: 15px
+	font-weight: bold
+	background-color: $my_gray
+	border-radius: 20%
+
+i.fa-clock-o
+	@extend .fa-cogs
