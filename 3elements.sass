@@ -1,0 +1,65 @@
+
+.icon-btn
+	height: 100px
+	width: 100px
+	border: 0
+	background-color: $my_gray
+	border-radius: 15%
+	margin: 50px
+	font-size: 60px
+	cursor: pointer
+	line-height: 40px
+
+/*TEXT UNDER ELEMENTS*/	
+.example
+	color: $almost-black
+	text-align: center
+	top: 0
+	left: 20%
+
+	h2
+		text-transform: uppercase
+		bottom: 0
+
+	p
+		font-size: 15px
+
+.elements
+	display: table
+	background-color: white
+	padding: 100px
+	width: 1200px
+	margin: 0 auto
+	line-height: 20px
+	text-align: center
+
+	i.fa-envelope
+			background-color: $my_gray
+			padding: 30px
+			border-radius: 15px
+			font-size: 40px
+			color: black
+
+	i.fa-credit-card-alt
+		@extend .fa-envelope
+
+	i.fa-envelope-o
+		@extend .fa-credit-card-alt
+
+.element1
+	text-align: center
+	i.fa
+		text-align: center
+		&:hover,
+		&:focus
+			cursor: pointer
+			color: white
+			background-color: navy
+			font-size: 60px
+			transition: 0.7s
+	h2
+		color: $body
+.element2
+	@extend .element1
+.element3
+	@extend .element1
